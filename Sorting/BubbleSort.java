@@ -2,25 +2,25 @@ package DSA.Sorting;
 
 import java.util.Arrays;
 
-public class SelectionSort {
+public class BubbleSort {
     public static void main(String[] args) {
         int[] array = {4,3,2,6,1,7,5};
-        selectionSort(array);
+        bubbleSort(array);
 
         System.out.println(Arrays.toString(array));
     }
-    public static void selectionSort(int[] arr){
+
+    public static void bubbleSort(int[] arr){
         int n = arr.length;
-        for (int i = 0; i <n ; i++) {
-            int min_index = i;
-            for (int j = i+1; j < n; j++) {
-                if(arr[j]<arr[min_index]){
-                    min_index = j;
+        for(int i =1;i<n;i++){
+            for (int j = 0; j <n-i ; j++) {
+                if(arr[j]>arr[j+1]){
+                    swap(arr,j+1,j);
                 }
             }
-            swap(arr,min_index,i);
         }
     }
+
     public static void swap(int[] arr , int i, int j){
         int temp = arr[i];
         arr[i] =arr[j];
