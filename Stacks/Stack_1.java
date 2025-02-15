@@ -1,11 +1,13 @@
 package DSA.Stacks;
 
-class Stack{
+import java.util.Stack;
+
+class Stack1{
     static final int MAX = 10;
     int top;
     int[] a = new int[MAX];
 
-    Stack(){
+    Stack1(){
         top = -1;
     }
 
@@ -50,7 +52,7 @@ class Stack{
 
 public class Stack_1 {
     public static void main(String[] args) {
-        Stack s = new Stack();
+        Stack1 s = new Stack1();
         s.push(3);
         s.push(4);
         s.push(5);

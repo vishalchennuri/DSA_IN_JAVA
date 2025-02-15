@@ -1,10 +1,10 @@
 package DSA.Stacks;
 
-class Stack1{
+class Stack2{
     int[] arr;
     int top;
     int capacity;
-    Stack1(int size){
+    Stack2(int size){
         top = -1;
         capacity = size;
         arr = new int[capacity];
@@ -31,7 +31,7 @@ class Stack1{
 public class Stack_2 {
     public static void main (String[] args)
     {
-        Stack1 s = new Stack1(5);
+        Stack2 s = new Stack2(5);
         s.push(5);
         s.push(10);
         s.push(15);
