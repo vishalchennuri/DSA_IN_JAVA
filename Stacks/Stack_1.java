@@ -1,7 +1,5 @@
 package DSA.Stacks;
 
-import java.util.Stack;
-
 class Stack1{
     static final int MAX = 10;
     int top;
